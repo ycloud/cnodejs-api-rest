@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = app => {
-  class TopicService extends app.Service {
+  class MessageService extends app.Service {
     constructor(ctx) {
       super(ctx);
     }
@@ -16,5 +16,5 @@ module.exports = app => {
     }
   }
 
-  return TopicService;
+  return MessageService;
 };

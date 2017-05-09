@@ -10,17 +10,8 @@ module.exports = app => {
       Object.assign(params, {
         mdrender: false
       })
-      return await this.curl('/topics', {
+      return await this.curl('/messages', {
         data: params,
-      });
-    }
-
-    async show(params) {
-      return await this.curl(`/topic/${params.id}`, {
-        data: {
-          mdrender: false,
-          accesstoken: params.accesstoken
-        }
       });
     }
   }

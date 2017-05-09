@@ -16,7 +16,7 @@ module.exports = {
   },
   async show() {
     this.validate({
-      accesstoken: { type: 'mongoId', required: false }
+      accesstoken: { type: 'token', required: false }
     }, this.query);
     this.validate({
       id: { type: 'mongoId', required: true }

@@ -23,5 +23,6 @@ module.exports = app => {
     }
   });
 
+  app.validator.addRule('token', /^[a-z\d\-]{36}$/i);
   app.validator.addRule('mongoId', /^[a-z\d]{24}$/i);
 };
